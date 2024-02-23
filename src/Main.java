@@ -7,12 +7,12 @@ public class Main {
         float percent = 9.99F; // Обозначила здесь, так как это данные со скриншота, можно удалить, оставив лишь тип и имя переменной
         int years;
         System.out.println("На 1 год:");
-        System.out.println("Ежемесячный платеж составит: " + (int) monthlyPayment.payment(creditSum, percent, 1));
+        System.out.println("Ежемесячный платеж составит: " + (int) monthlyPayment.calculate(creditSum, percent, 1));
 
         System.out.println("На 2 года:");
-        System.out.println("Ежемесячный платеж составит: " + (int) monthlyPayment.payment(creditSum, percent, 2));
+        System.out.println("Ежемесячный платеж составит: " + (int) monthlyPayment.calculate(creditSum, percent, 2));
 
         System.out.println("На 3 года:");
-        System.out.println("Ежемесячный платеж составит: " + (int) monthlyPayment.payment(creditSum, percent, 3));
+        System.out.println("Ежемесячный платеж составит: " + (int) monthlyPayment.calculate(creditSum, percent, 3));
     }
 }
